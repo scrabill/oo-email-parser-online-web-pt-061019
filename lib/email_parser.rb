@@ -32,7 +32,7 @@ class EmailParser
 
     array.each do |item|
       x = item.gsub(",","")
-      array << item
+      array << x
     end
     # array.reject(&:empty?)
 
