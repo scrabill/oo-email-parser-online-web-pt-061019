@@ -28,8 +28,7 @@ class EmailParser
     # array << @string.split(/\s/)
 
     array << @string.split(/,\s/)
-    array.split(/\s/)
-    # array << @string.split(/\s/)
+    array << @string.split(/\s/)
 
     # array.each do |item|
     #   item.chomp!
