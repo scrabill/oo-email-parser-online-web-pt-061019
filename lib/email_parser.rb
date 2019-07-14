@@ -23,8 +23,11 @@ class EmailParser
 
     # array << @string.split(/[,|\s][,\s]/)
 
-    array << @string.split(/,/)
-    array << @string.split(/\s/)
+    # This kind of works
+    # array << @string.split(/,/)
+    # array << @string.split(/\s/)
+
+    array << @string.split(/,\s/)
 
     # array.each do |item|
     #   item + !
