@@ -30,6 +30,8 @@ class EmailParser
     array << @string.split(/,\s/)
     array << @string.split(/\s/)
 
+      array.flatten.uniq
+
     array.each do |item|
       x = item.gsub(".com,",".com")
       array << item
