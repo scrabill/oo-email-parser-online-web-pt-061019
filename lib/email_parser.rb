@@ -31,7 +31,7 @@ class EmailParser
     array << @string.split(/\s/)
 
     array.each do |item|
-      item.delete(",")
+      item.trim(",")
       array << x
     end
     # array.reject(&:empty?)
