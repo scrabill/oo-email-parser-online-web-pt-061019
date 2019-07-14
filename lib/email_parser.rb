@@ -30,10 +30,10 @@ class EmailParser
     array << @string.split(/,\s/)
     array << @string.split(/\s/)
 
-    # array.each do |item|
-    #   item.trim(",")
-    #   array << x
-    # end
+    array.each do |item|
+      item.chomp!
+      array << item
+    end
     # array.reject(&:empty?)
 
     # array.reject! { |item| item.to_s.empty? }
