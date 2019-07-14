@@ -38,7 +38,7 @@ class EmailParser
 
     # array.reject! { |item| item.to_s.empty? }
 
-    array.uniq
+    array.uniq.flatten
 
     # x = @string.split(" ")
     # y = @string.split(",")
