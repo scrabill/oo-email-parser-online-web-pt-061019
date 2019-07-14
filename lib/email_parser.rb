@@ -30,7 +30,7 @@ class EmailParser
     # array << @string.split(/\s/)
 
     array << @string.split(/,\s/)
-
+    binding.pry
     array << @string.split(/\s/)
     array << @string.split(/,/)
 
